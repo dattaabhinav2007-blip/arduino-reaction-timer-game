@@ -20,7 +20,7 @@ Components Used
 
 - Arduino UNO
 - LED
-- 220Ω Resistor
+- 330Ω Resistor
 - Push Button
 - Breadboard
 - Jumper Wires
@@ -35,3 +35,6 @@ How it works
 6. The reaction time is shown on the Serial Monitor.
 
 This is one of the projects from my Arduino learning journey, and it gave me a better understanding of timing and simple embedded programming logic.
+
+▶️Demo_Video:
+" https://drive.google.com/file/d/1YN-RMg_G-5VnhlsbY5M2sJruoVSSgVVC/view?usp=drivesdk "
