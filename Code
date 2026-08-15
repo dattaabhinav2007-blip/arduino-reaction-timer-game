@@ -1,1 +1,35 @@
+//REACTION_TIMER_GAME
+int LEDPin=9;
+int buttonPin=3;
+long starttime;
+long endtime;
+int dt=1000;
+void setup() {
+  // put your setup code here, to run once:
+pinMode(LEDPin,OUTPUT);
+pinMode(buttonPin,INPUT_PULLUP);
+Serial.begin(9600);
+}
 
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(LEDPin,LOW);
+int waittime=random(2000, 5000);
+delay(waittime);
+
+digitalWrite(LEDPin,HIGH);
+starttime=millis();
+
+while(digitalRead(buttonPin)==HIGH){
+
+}
+endtime=millis();
+
+digitalWrite(LEDPin,LOW);
+
+Serial.print("Reaction time: ");
+Serial.print(endtime-starttime);
+Serial.println(" ms");
+
+delay(dt);
+}
